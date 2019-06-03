@@ -2,22 +2,36 @@
 
 <style type="text/css">
 	#main {
+		height: 100%;
 		display: grid;
 		background: lightgray;
-		grid-template-columns: auto;
-	 	grid-template-rows: 50px 50px 50px; 
-	 	grid-gap: 30px;
+		grid-template-columns: repeat(12, 1fr);
+	 	grid-template-rows: 40px auto 40px; 
+	 	grid-gap: 3px;
+	 	grid-template-areas: 
+	 	"t t t t t t t t t t t t" /* t is for title*/
+	 	"i c c c c c c c c c c c" /* i is for image and c is for content. (tribute-information)*/
+	 	"l l l l l l l l l l l l"; /* l is for link*/
 	}
 
-	/*#title {
+	#title {
+		grid-area: t;
 	}	
 
 	#img-div {
+		grid-area: i;
 	}
 
 	#tribute-info {
+		grid-area: c;
 		
-	}*/
+	}
+
+	#link {
+		grid-area: l;
+	
+	}
+	
 	
 </style>
 <html>
@@ -25,8 +39,9 @@
 <head>
 	<title>The Great Betty Davis</title>
 </head>
-<body>
-	<div id="main">
+
+<div id="main">
+	<body>
 		<h1 id="title">A Tribute to Betty Davis: Mother of Funk</h1>
 
 		<div id="img-div">
@@ -45,7 +60,7 @@
 			<li>Although Davis created 8 hit singles, four albums and was known among musicians for her fiery spirit and creativity, controversy followed her, leading to boycotts of shows and very little airplay. Ultimately her promising career as the mother of funk music was never able to flourish.</li>
 			<li>Recently she has experienced a revival, with her last album "Is It Love or Desire" recorded in 1976, finally being released in 2009. Only then did the world begin to recognized her contribution to music.</li>
 		</ul>
-		<p>Click to listen to <a href="https://youtu.be/fxKBnR_8LIM" target="-blank">Betty Davis, "Anti Love Song"</a>(1973)</p>
-	</div>
-</body>
+		<p id="link">Click to listen to <a href="https://youtu.be/fxKBnR_8LIM" target="-blank">Betty Davis, "Anti Love Song"</a>(1973)</p>
+	</body>
+</div>
 </html>
