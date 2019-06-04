@@ -7,16 +7,16 @@
 		background: lightgray;
 		grid-template-columns: repeat(12, 1fr);
 	 	grid-template-rows: 80px auto 40px; 
-	 	grid-gap: 3px;
+	 	grid-gap: 10px;
 	 	grid-template-areas: 
 	 	"t t t t t t t t t t t t" /* t is for title*/
 	 	"i c c c c c c c c c c c" /* i is for image and c is for content. (tribute-information)*/
-	 	"l l l l l l l l l l l l"; /* l is for link*/
+	 	"i l l l l l l l l l l l"; /* l is for link*/
 	}
 
 	#title {
 		grid-area: t;
-		color: pink;
+		color: black;
 		text-align: center;
 		font-size: 45px;
 
@@ -25,7 +25,8 @@
 
 	#img-div {
 		grid-area: i;
-		
+		border: 1px solid black;
+		margin : 20px 10px 20px 10px;
 	}
 
 	#tribute-info {
@@ -35,7 +36,7 @@
 
 	#link {
 		grid-area: l;
-	
+		font-size: 15px;
 	}
 	
 	
@@ -51,7 +52,7 @@
 		<h1 id="title">A Tribute to Betty Davis: Mother of Funk</h1>
 
 		<div id="img-div">
-			<img src="https://hazlitt.net/sites/default/files/styles/article-header-image/public/field/image/bettydavisbanner.jpg" id="image">
+			<img src="https://light-in-the-attic.s3.amazonaws.com/uploads/release_image/18787/image/large_550_tmp_2F1466791093063-xfnvfdm13h68nxrz-35bf92699ab44f47edb0f8a88686f322_2FLITA135_AlbumCover.jpg" id="image">
 		</div>
 
 		<ul id="tribute-info">
@@ -70,3 +71,4 @@
 	</body>
 </div>
 </html>
+
