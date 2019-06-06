@@ -7,12 +7,12 @@
 		display: grid;
 		background: lightgray;
 		grid-template-columns: repeat(12, 1fr);
-	 	grid-template-rows: 40px auto 80px; 
+	 	grid-template-rows: 70px auto auto; 
 	 	grid-gap: 10px;
 	 	grid-template-areas: 
 	 	"t t t t t t t t t t t t" /* t is for title*/
 	 	". . i i i i i i i i . ." /* i is for image and c is for content. (tribute-information)*/
-	 	"c c c c c c c c c c c c"; /* l is for link*/
+	 	". . c c c c c c c c . ."; /* l is for link*/
 	}
 
 	#title {
@@ -21,18 +21,25 @@
 		text-align: center;
 		font-size: 45px;
 		font-family: Georgia, Verdana, sans-serif;
-
+		border: 50px;
 	}	
 
 	#img-div {
 		grid-area: i;
 		border: 0.5px solid black;
-		margin : 20px 10px 20px 10px;
+		/*margin : 20px 10px 20px 10px;*/
 		background-color: orange;
 		max-width: 100%;
   		display: block;
   		height: auto;
+  		margin: 20px;
+	}
 
+	/*This div was just added so I can add responsiveness to the photo*/
+	#img {
+		max-width: 100%;
+  		display: block;
+  		height: auto;
 	}
 
 	#tribute-info {
@@ -62,7 +69,7 @@
 		<h1 id="title">A Tribute to Betty Davis: Mother of Funk</h1>
 
 		<div id="img-div">
-			<img src="https://light-in-the-attic.s3.amazonaws.com/uploads/release_image/18787/image/large_550_tmp_2F1466791093063-xfnvfdm13h68nxrz-35bf92699ab44f47edb0f8a88686f322_2FLITA135_AlbumCover.jpg" id="image" alt ="Betty Davis, the Comumbia Years">
+			<img src="https://light-in-the-attic.s3.amazonaws.com/uploads/release_image/18787/image/large_550_tmp_2F1466791093063-xfnvfdm13h68nxrz-35bf92699ab44f47edb0f8a88686f322_2FLITA135_AlbumCover.jpg" id="image" alt ="Betty Davis, the Comumbia Years" id ="img"> <!--Added img tag to give photo more functionality-->
 			<div id id="img-caption"><p>Betty Davis' <em>The Columbia Years</em>, was released in 2016 by Light in the Attic Records</p></div>
 		</div>
 
