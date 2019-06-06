@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 
 <style type="text/css">
+	
 	#main {
 		height: 100%;
 		display: grid;
 		background: lightgray;
 		grid-template-columns: repeat(12, 1fr);
-	 	grid-template-rows: 80px auto 40px; 
-	 	/*grid-gap: 10px;*/
+	 	grid-template-rows: 40px auto 80px; 
+	 	grid-gap: 10px;
 	 	grid-template-areas: 
 	 	"t t t t t t t t t t t t" /* t is for title*/
-	 	"i c c c c c c c c c c c" /* i is for image and c is for content. (tribute-information)*/
-	 	"i l l l l l l l l l l l"; /* l is for link*/
+	 	". . i i i i i i i i . ." /* i is for image and c is for content. (tribute-information)*/
+	 	"c c c c c c c c c c c c"; /* l is for link*/
 	}
 
 	#title {
@@ -20,7 +21,6 @@
 		text-align: center;
 		font-size: 45px;
 		font-family: Georgia, Verdana, sans-serif;
-
 
 	}	
 
@@ -32,6 +32,7 @@
 		max-width: 100%;
   		display: block;
   		height: auto;
+
 	}
 
 	#tribute-info {
@@ -45,7 +46,6 @@
 		grid-area: l;
 		font-size: 20px;
 		text-align: center;
-
 
 	}
 	
@@ -66,19 +66,25 @@
 			<div id id="img-caption"><p>Betty Davis' <em>The Columbia Years</em>, was released in 2016 by Light in the Attic Records</p></div>
 		</div>
 
-		<ul id="tribute-info">
-			<li>Betty Davis was born Betty Mabry in 1945</li>
-			<li>She grew up in Durham, North Carolina</li>
-			<li>Early on she was influenced by Blues artists like she listened to B.B. King, Jimmy Reed, and Elmore James</li>
-			<li>At 16 Betty moved to NYC to attend the Fashion Institute of Technology. There she was inspired by the folk music scene of Greenwich Village.</li>
-			<li>She found work as a model for magazines like Seventeen, Ebony and Glamour while hanging out at a stylish club called The Cellar</li>
-			<li>She met musicians Jimi Hendrix and Sly Stone and recorded her first single, "The Cellar" with soul singer Lou Courtney	</li>
-			<li>Although her early music career included he successful, "Uptown (to Harlem) recorded with the Chambers Brothers, she instead pursued modeling.</li>
-			<li>In 1967 22 y/o Betty met 41 y/o jazz icon, Miles Davis. A year later they married. And although their relationship was short lived and timultous, she is credited with pushing him into a whole new phase of musical expression known as Jazz Fusion, marked by "Bitches Brew".</li>
-			<li>Although Davis created 8 hit singles, four albums and was known among musicians for her fiery spirit and creativity, controversy followed her, leading to boycotts of shows and very little airplay. Ultimately her promising career as the mother of funk music was never able to flourish.</li>
-			<li>Recently she has experienced a revival, with her last album "Is It Love or Desire" recorded in 1976, finally being released in 2009. Only then did the world begin to recognized her contribution to music.</li>
-		</ul>
-		<p id="link">Click to listen to <a href="https://youtu.be/fxKBnR_8LIM" target="-blank">Betty Davis, "Anti Love Song"</a>(1973)</p>
+		<div id="tribute-info">
+
+			<ul >
+				<li>Betty Davis was born Betty Mabry in 1945</li>
+				<li>She grew up in Durham, North Carolina</li>
+				<li>Early on she was influenced by Blues artists like she listened to B.B. King, Jimmy Reed, and Elmore James</li>
+				<li>At 16 Betty moved to NYC to attend the Fashion Institute of Technology. There she was inspired by the folk music scene of Greenwich Village.</li>
+				<li>She found work as a model for magazines like Seventeen, Ebony and Glamour while hanging out at a stylish club called The Cellar</li>
+				<li>She met musicians Jimi Hendrix and Sly Stone and recorded her first single, "The Cellar" with soul singer Lou Courtney	</li>
+				<li>Although her early music career included he successful, "Uptown (to Harlem) recorded with the Chambers Brothers, she instead pursued modeling.</li>
+				<li>In 1967 22 y/o Betty met 41 y/o jazz icon, Miles Davis. A year later they married. And although their relationship was short lived and timultous, she is credited with pushing him into a whole new phase of musical expression known as Jazz Fusion, marked by "Bitches Brew".</li>
+				<li>Although Davis created 8 hit singles, four albums and was known among musicians for her fiery spirit and creativity, controversy followed her, leading to boycotts of shows and very little airplay. Ultimately her promising career as the mother of funk music was never able to flourish.</li>
+				<li>Recently she has experienced a revival, with her last album "Is It Love or Desire" recorded in 1976, finally being released in 2009. Only then did the world begin to recognized her contribution to music.</li>
+			</ul>
+			
+			<p id="link">Click to listen to <a href="https://youtu.be/fxKBnR_8LIM" target="-blank">Betty Davis, "Anti Love Song"</a>(1973)</p>
+
+		</div>
+	
 	</body>
 </div>
 </html>
